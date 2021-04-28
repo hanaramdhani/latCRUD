@@ -14,7 +14,7 @@ class CreateUjiansTable extends Migration
     public function up()
     {
         Schema::create('ujians', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->string('nama_mk');
             $table->string('dosen');
             $table->integer('jumlah_soal');
